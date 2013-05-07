@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="10" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -23,7 +23,7 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="9" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="4" fill="1" visible="yes" active="yes"/>
@@ -126,10 +126,10 @@
 <text x="45.212" y="45.72" size="6.096" layer="51" font="vector" ratio="16">7</text>
 <text x="68.072" y="45.72" size="6.096" layer="51" font="vector" ratio="16">8</text>
 <rectangle x1="39.624" y1="2.032" x2="73.152" y2="22.352" layer="51"/>
-<text x="6.858" y="2.794" size="1.27" layer="51" font="vector" ratio="12">gnd</text>
-<text x="5.842" y="5.207" size="1.27" layer="51" font="vector" ratio="12">5vdc</text>
-<text x="3.429" y="7.747" size="1.27" layer="51" font="vector" ratio="12">i2c clk</text>
-<text x="3.429" y="10.16" size="1.27" layer="51" font="vector" ratio="12">i2c dat</text>
+<text x="11.43" y="8.89" size="1.27" layer="51" font="vector" ratio="12" rot="R90">gnd</text>
+<text x="9.271" y="8.89" size="1.27" layer="51" font="vector" ratio="12" rot="R90">5vdc</text>
+<text x="6.731" y="8.509" size="1.27" layer="51" font="vector" ratio="12" rot="R90">i2c clk</text>
+<text x="4.318" y="8.255" size="1.27" layer="51" font="vector" ratio="12" rot="R90">i2c dat</text>
 <text x="-19.939" y="42.672" size="1.27" layer="25" font="vector" ratio="12">gnd</text>
 <text x="-21.209" y="8.255" size="1.27" layer="51" font="vector" ratio="12" rot="R90">gnd</text>
 <text x="1.651" y="8.128" size="1.27" layer="51" font="vector" ratio="12" rot="R90">gnd</text>
@@ -2096,11 +2096,11 @@ design rules under a new name.</description>
 <element name="CH4" library="josh" package="BNC_VERTICAL" value="BNC_VERTICAL" x="64.77" y="72.517"/>
 <element name="U$2" library="josh" package="OPEN_EPHYS_LOGO" value="" x="-24.257" y="84.328"/>
 <element name="U$3" library="open-ephys" package="HDMI_A" value="HDMI" x="28.194" y="7.366"/>
-<element name="X1" library="con-molex" package="22-23-2041" value="22-23-2041" x="14.097" y="7.239" rot="R90">
-<attribute name="OC_NEWARK" value="38C0355" x="14.097" y="7.239" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="22-23-2041" x="14.097" y="7.239" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MF" value="MOLEX" x="14.097" y="7.239" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OC_FARNELL" value="1462920" x="14.097" y="7.239" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="X1" library="con-molex" package="22-23-2041" value="22-23-2041" x="7.366" y="4.572" rot="R180">
+<attribute name="OC_NEWARK" value="38C0355" x="7.366" y="4.572" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="22-23-2041" x="7.366" y="4.572" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="MOLEX" x="7.366" y="4.572" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OC_FARNELL" value="1462920" x="7.366" y="4.572" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="X3" library="con-molex" package="22-23-2101" value="22-23-2101" x="-10.414" y="4.572" rot="R180">
 <attribute name="OC_NEWARK" value="94C0765" x="-10.414" y="4.572" size="1.778" layer="27" rot="R180" display="off"/>
@@ -2258,10 +2258,10 @@ design rules under a new name.</description>
 <contactref element="X3" pad="8"/>
 <wire x1="-16.764" y1="4.572" x2="-16.764" y2="3.048" width="0.254" layer="1"/>
 <wire x1="-16.764" y1="3.048" x2="-16.002" y2="2.286" width="0.254" layer="1"/>
-<wire x1="-16.002" y1="2.286" x2="2.286" y2="2.286" width="0.254" layer="1"/>
-<wire x1="2.286" y1="2.286" x2="4.318" y2="4.318" width="0.254" layer="1"/>
-<wire x1="4.318" y1="4.318" x2="4.318" y2="9.906" width="0.254" layer="1"/>
-<wire x1="4.318" y1="9.906" x2="8.382" y2="13.97" width="0.254" layer="1"/>
+<wire x1="-16.002" y1="2.286" x2="4.064" y2="2.286" width="0.254" layer="1"/>
+<wire x1="4.064" y1="2.286" x2="4.826" y2="3.048" width="0.254" layer="1"/>
+<wire x1="4.826" y1="3.048" x2="4.826" y2="10.414" width="0.254" layer="1"/>
+<wire x1="4.826" y1="10.414" x2="8.382" y2="13.97" width="0.254" layer="1"/>
 <wire x1="8.382" y1="13.97" x2="27.813" y2="13.97" width="0.254" layer="1"/>
 <wire x1="27.813" y1="13.97" x2="27.94" y2="14.097" width="0.254" layer="1"/>
 </signal>
@@ -2459,29 +2459,33 @@ design rules under a new name.</description>
 <contactref element="U$3" pad="P$18"/>
 <wire x1="24.444" y1="8.316" x2="24.444" y2="9.719" width="0.254" layer="1"/>
 <wire x1="24.444" y1="9.719" x2="24.13" y2="10.033" width="0.254" layer="1"/>
-<wire x1="24.13" y1="10.033" x2="20.32" y2="10.033" width="0.254" layer="1"/>
-<wire x1="20.32" y1="10.033" x2="16.51" y2="6.223" width="0.254" layer="1"/>
-<wire x1="16.51" y1="6.223" x2="14.351" y2="6.223" width="0.254" layer="1"/>
-<wire x1="14.351" y1="6.223" x2="14.097" y2="5.969" width="0.254" layer="1"/>
+<wire x1="24.13" y1="10.033" x2="12.319" y2="10.033" width="0.254" layer="1"/>
+<wire x1="12.319" y1="10.033" x2="8.636" y2="6.35" width="0.254" layer="1"/>
+<wire x1="8.636" y1="6.35" x2="8.636" y2="4.318" width="0.254" layer="1"/>
+<wire x1="8.636" y1="4.318" x2="8.636" y2="4.572" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="I2C_CLK">
 <contactref element="X1" pad="3"/>
 <contactref element="U$3" pad="P$15"/>
 <wire x1="25.944" y1="8.316" x2="25.944" y2="11.013" width="0.254" layer="1"/>
 <wire x1="25.944" y1="11.013" x2="24.13" y2="12.827" width="0.254" layer="1"/>
-<wire x1="24.13" y1="12.827" x2="12.573" y2="12.827" width="0.254" layer="1"/>
-<wire x1="12.573" y1="12.827" x2="11.557" y2="11.811" width="0.254" layer="1"/>
-<wire x1="11.557" y1="11.811" x2="11.557" y2="9.398" width="0.254" layer="1"/>
-<wire x1="11.557" y1="9.398" x2="12.446" y2="8.509" width="0.254" layer="1"/>
-<wire x1="12.446" y1="8.509" x2="14.097" y2="8.509" width="0.254" layer="1"/>
+<wire x1="24.13" y1="12.827" x2="10.033" y2="12.827" width="0.254" layer="1"/>
+<wire x1="10.033" y1="12.827" x2="6.35" y2="9.144" width="0.254" layer="1"/>
+<wire x1="6.35" y1="9.144" x2="6.35" y2="4.826" width="0.254" layer="1"/>
+<wire x1="6.35" y1="4.826" x2="6.096" y2="4.572" width="0.254" layer="1"/>
 </signal>
 <signal name="I2C_DAT">
 <contactref element="X1" pad="4"/>
 <contactref element="U$3" pad="P$16"/>
 <wire x1="25.444" y1="8.316" x2="25.444" y2="10.624" width="0.254" layer="1"/>
-<wire x1="25.444" y1="10.624" x2="24.892" y2="11.176" width="0.254" layer="1"/>
-<wire x1="24.892" y1="11.176" x2="14.224" y2="11.176" width="0.254" layer="1"/>
-<wire x1="14.224" y1="11.176" x2="14.097" y2="11.049" width="0.254" layer="1"/>
+<wire x1="25.444" y1="10.624" x2="25.019" y2="11.049" width="0.254" layer="1"/>
+<wire x1="25.019" y1="11.049" x2="24.892" y2="11.176" width="0.254" layer="1"/>
+<wire x1="3.556" y1="4.572" x2="3.81" y2="4.572" width="0.254" layer="16"/>
+<wire x1="3.81" y1="4.572" x2="10.922" y2="11.684" width="0.254" layer="16"/>
+<wire x1="10.922" y1="11.684" x2="13.716" y2="11.684" width="0.254" layer="16"/>
+<via x="13.716" y="11.684" extent="1-16" drill="0.6" shape="square"/>
+<wire x1="13.716" y1="11.684" x2="24.384" y2="11.684" width="0.254" layer="1"/>
+<wire x1="24.384" y1="11.684" x2="24.892" y2="11.176" width="0.254" layer="1"/>
 </signal>
 <signal name="DGND1">
 <wire x1="77.47" y1="44.831" x2="80.899" y2="44.831" width="0.635" layer="16"/>
