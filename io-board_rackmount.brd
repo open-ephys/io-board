@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -23,7 +23,7 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="8" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="4" fill="1" visible="yes" active="yes"/>
@@ -52,7 +52,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
@@ -107,15 +107,13 @@
 </layers>
 <board>
 <plain>
-<text x="17.907" y="56.642" size="1.778" layer="25" font="vector">I/O Board</text>
-<text x="17.907" y="54.102" size="1.27" layer="25" font="vector">version 1.3</text>
-<text x="18.034" y="51.181" size="1.27" layer="25" font="vector">May 2013</text>
-<hole x="6.096" y="85.598" drill="6.858"/>
+<text x="17.907" y="56.642" size="1.778" layer="51" font="vector">I/O Board</text>
+<text x="17.907" y="54.102" size="1.27" layer="51" font="vector">version 1.4</text>
+<text x="18.034" y="51.181" size="1.27" layer="51" font="vector">July 2013</text>
 <hole x="6.096" y="69.723" drill="6.858"/>
 <hole x="6.096" y="53.848" drill="6.858"/>
-<hole x="6.096" y="37.973" drill="6.858"/>
-<hole x="6.096" y="22.098" drill="6.858"/>
-<hole x="6.096" y="6.223" drill="6.858"/>
+<hole x="6.096" y="41.148" drill="6.858"/>
+<hole x="6.096" y="25.273" drill="6.858"/>
 <wire x1="120.269" y1="0.508" x2="3.937" y2="0.508" width="0.254" layer="20"/>
 <wire x1="3.937" y1="0.508" x2="0.127" y2="4.318" width="0.254" layer="20"/>
 <wire x1="0.127" y1="4.318" x2="0.127" y2="86.995" width="0.254" layer="20"/>
@@ -124,29 +122,27 @@
 <wire x1="120.269" y1="90.805" x2="124.079" y2="86.995" width="0.254" layer="20"/>
 <wire x1="124.079" y1="86.995" x2="124.079" y2="4.318" width="0.254" layer="20"/>
 <wire x1="124.079" y1="4.318" x2="120.269" y2="0.508" width="0.254" layer="20"/>
-<text x="36.068" y="83.058" size="6.096" layer="25" font="vector" ratio="16">1</text>
-<text x="58.928" y="83.058" size="6.096" layer="25" font="vector" ratio="16">2</text>
-<text x="81.788" y="83.058" size="6.096" layer="25" font="vector" ratio="16">3</text>
-<text x="104.648" y="83.058" size="6.096" layer="25" font="vector" ratio="16">4</text>
-<text x="36.068" y="47.498" size="6.096" layer="25" font="vector" ratio="16">5</text>
-<text x="58.928" y="47.498" size="6.096" layer="25" font="vector" ratio="16">6</text>
-<text x="81.788" y="47.498" size="6.096" layer="25" font="vector" ratio="16">7</text>
-<text x="104.648" y="47.498" size="6.096" layer="25" font="vector" ratio="16">8</text>
-<rectangle x1="76.2" y1="3.81" x2="109.728" y2="24.13" layer="25"/>
-<text x="48.006" y="10.668" size="1.27" layer="25" font="vector" ratio="12" rot="R90">gnd</text>
-<text x="45.847" y="10.668" size="1.27" layer="25" font="vector" ratio="12" rot="R90">5vdc</text>
-<text x="43.307" y="10.287" size="1.27" layer="25" font="vector" ratio="12" rot="R90">i2c clk</text>
-<text x="40.894" y="10.033" size="1.27" layer="25" font="vector" ratio="12" rot="R90">i2c dat</text>
+<text x="36.068" y="83.058" size="6.096" layer="51" font="vector" ratio="16">1</text>
+<text x="58.928" y="83.058" size="6.096" layer="51" font="vector" ratio="16">2</text>
+<text x="81.788" y="83.058" size="6.096" layer="51" font="vector" ratio="16">3</text>
+<text x="104.648" y="83.058" size="6.096" layer="51" font="vector" ratio="16">4</text>
+<text x="36.068" y="47.498" size="6.096" layer="51" font="vector" ratio="16">5</text>
+<text x="58.928" y="47.498" size="6.096" layer="51" font="vector" ratio="16">6</text>
+<text x="81.788" y="47.498" size="6.096" layer="51" font="vector" ratio="16">7</text>
+<text x="104.648" y="47.498" size="6.096" layer="51" font="vector" ratio="16">8</text>
+<rectangle x1="76.2" y1="3.81" x2="109.728" y2="24.13" layer="51"/>
+<text x="48.006" y="10.668" size="1.27" layer="51" font="vector" ratio="12" rot="R90">gnd</text>
+<text x="45.847" y="10.668" size="1.27" layer="51" font="vector" ratio="12" rot="R90">5vdc</text>
+<text x="43.307" y="10.287" size="1.27" layer="51" font="vector" ratio="12" rot="R90">i2c clk</text>
+<text x="40.894" y="10.033" size="1.27" layer="51" font="vector" ratio="12" rot="R90">i2c dat</text>
 <text x="16.637" y="44.45" size="1.27" layer="25" font="vector" ratio="12">gnd</text>
-<text x="15.367" y="10.033" size="1.27" layer="25" font="vector" ratio="12" rot="R90">gnd</text>
-<text x="38.227" y="9.906" size="1.27" layer="25" font="vector" ratio="12" rot="R90">gnd</text>
-<text x="16.764" y="11.049" size="1.3716" layer="25" font="vector" ratio="18">8 7 6 5 4 3 2 1</text>
-<hole x="117.856" y="85.598" drill="6.858"/>
+<text x="15.367" y="10.033" size="1.27" layer="51" font="vector" ratio="12" rot="R90">gnd</text>
+<text x="38.227" y="9.906" size="1.27" layer="51" font="vector" ratio="12" rot="R90">gnd</text>
+<text x="16.764" y="11.049" size="1.3716" layer="51" font="vector" ratio="18">8 7 6 5 4 3 2 1</text>
 <hole x="117.856" y="69.723" drill="6.858"/>
 <hole x="117.856" y="53.848" drill="6.858"/>
-<hole x="117.856" y="37.973" drill="6.858"/>
-<hole x="117.856" y="22.098" drill="6.858"/>
-<hole x="117.856" y="6.223" drill="6.858"/>
+<hole x="117.856" y="41.148" drill="6.858"/>
+<hole x="117.856" y="25.273" drill="6.858"/>
 </plain>
 <libraries>
 <library name="josh">
@@ -1881,7 +1877,7 @@
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="default *">
+<designrules name="default">
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 Die Standard-Design-Rules sind so gewählt, dass sie für 
@@ -2068,13 +2064,13 @@ design rules under a new name.</description>
 <element name="CH4" library="josh" package="BNC_VERTICAL" value="BNC_VERTICAL" x="101.346" y="74.295"/>
 <element name="U$2" library="josh" package="OPEN_EPHYS_LOGO" value="" x="17.145" y="58.928"/>
 <element name="U$3" library="open-ephys" package="HDMI_A" value="HDMI" x="64.77" y="9.398"/>
-<element name="X1" library="con-molex" package="22-23-2041" value="22-23-2041" x="43.942" y="7.366" smashed="yes" rot="R180">
+<element name="X1" library="con-molex" package="22-23-2041" value="22-23-2041" x="43.942" y="7.366" rot="R180">
 <attribute name="OC_NEWARK" value="38C0355" x="43.942" y="7.366" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="22-23-2041" x="43.942" y="7.366" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="MOLEX" x="43.942" y="7.366" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="1462920" x="43.942" y="7.366" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="X3" library="con-molex" package="22-23-2101" value="22-23-2101" x="26.162" y="7.366" smashed="yes">
+<element name="X3" library="con-molex" package="22-23-2101" value="22-23-2101" x="26.162" y="7.366">
 <attribute name="OC_NEWARK" value="94C0765" x="26.162" y="7.366" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="22-23-2101" x="26.162" y="7.366" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="MOLEX" x="26.162" y="7.366" size="1.778" layer="27" display="off"/>
@@ -2313,7 +2309,7 @@ design rules under a new name.</description>
 <wire x1="24.892" y1="4.064" x2="24.892" y2="7.366" width="0.254" layer="1"/>
 </signal>
 <signal name="S$1">
-<via x="6.096" y="85.598" extent="1-16" drill="6.858"/>
+<via x="5.096" y="85.598" extent="1-16" drill="3"/>
 </signal>
 <signal name="S$2">
 <via x="6.096" y="69.723" extent="1-16" drill="6.858"/>
@@ -2322,16 +2318,16 @@ design rules under a new name.</description>
 <via x="6.096" y="53.848" extent="1-16" drill="6.858"/>
 </signal>
 <signal name="S$4">
-<via x="6.096" y="37.973" extent="1-16" drill="6.858"/>
+<via x="6.096" y="41.148" extent="1-16" drill="6.858"/>
 </signal>
 <signal name="S$5">
-<via x="6.096" y="22.098" extent="1-16" drill="6.858"/>
+<via x="6.096" y="25.273" extent="1-16" drill="6.858"/>
 </signal>
 <signal name="S$6">
-<via x="6.096" y="6.223" extent="1-16" drill="6.858"/>
+<via x="5.096" y="5.398" extent="1-16" drill="3"/>
 </signal>
 <signal name="S$13">
-<wire x1="5.969" y1="84.836" x2="5.969" y2="7.747" width="1.6764" layer="16"/>
+<wire x1="5.969" y1="84.836" x2="5.969" y2="4.922" width="1.6764" layer="16"/>
 </signal>
 <signal name="VCC">
 <contactref element="X1" pad="2"/>
@@ -2366,8 +2362,8 @@ design rules under a new name.</description>
 <signal name="DGND1">
 <wire x1="114.046" y1="46.609" x2="117.983" y2="46.609" width="1.6764" layer="16"/>
 </signal>
-<signal name="S$7">
-<via x="117.856" y="85.598" extent="1-16" drill="6.858"/>
+<signal name="3">
+<via x="118.856" y="85.598" extent="1-16" drill="3"/>
 </signal>
 <signal name="S$8">
 <via x="117.856" y="69.723" extent="1-16" drill="6.858"/>
@@ -2376,16 +2372,16 @@ design rules under a new name.</description>
 <via x="117.856" y="53.848" extent="1-16" drill="6.858"/>
 </signal>
 <signal name="S$10">
-<via x="117.856" y="37.973" extent="1-16" drill="6.858"/>
+<via x="117.856" y="41.148" extent="1-16" drill="6.858"/>
 </signal>
 <signal name="S$11">
-<via x="117.856" y="22.098" extent="1-16" drill="6.858"/>
+<via x="117.856" y="25.273" extent="1-16" drill="6.858"/>
 </signal>
 <signal name="S$12">
-<via x="117.856" y="6.223" extent="1-16" drill="6.858"/>
+<via x="118.856" y="6.144" extent="1-16" drill="3"/>
 </signal>
 <signal name="S$14">
-<wire x1="117.983" y1="85.09" x2="117.983" y2="5.715" width="1.6764" layer="16"/>
+<wire x1="117.983" y1="85.09" x2="117.983" y2="6.89" width="1.6764" layer="16"/>
 </signal>
 </signals>
 </board>
