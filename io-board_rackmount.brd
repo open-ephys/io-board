@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -52,7 +52,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
@@ -108,12 +108,14 @@
 <board>
 <plain>
 <text x="17.907" y="56.642" size="1.778" layer="51" font="vector">I/O Board</text>
-<text x="17.907" y="54.102" size="1.27" layer="51" font="vector">version 1.4</text>
-<text x="18.034" y="51.181" size="1.27" layer="51" font="vector">July 2013</text>
+<text x="17.907" y="54.102" size="1.27" layer="51" font="vector">version 1.3</text>
+<text x="18.034" y="51.181" size="1.27" layer="51" font="vector">May 2013</text>
+<hole x="6.096" y="85.598" drill="6.858"/>
 <hole x="6.096" y="69.723" drill="6.858"/>
 <hole x="6.096" y="53.848" drill="6.858"/>
 <hole x="6.096" y="41.148" drill="6.858"/>
 <hole x="6.096" y="25.273" drill="6.858"/>
+<hole x="6.096" y="9.398" drill="6.858"/>
 <wire x1="120.269" y1="0.508" x2="3.937" y2="0.508" width="0.254" layer="20"/>
 <wire x1="3.937" y1="0.508" x2="0.127" y2="4.318" width="0.254" layer="20"/>
 <wire x1="0.127" y1="4.318" x2="0.127" y2="86.995" width="0.254" layer="20"/>
@@ -139,10 +141,12 @@
 <text x="15.367" y="10.033" size="1.27" layer="51" font="vector" ratio="12" rot="R90">gnd</text>
 <text x="38.227" y="9.906" size="1.27" layer="51" font="vector" ratio="12" rot="R90">gnd</text>
 <text x="16.764" y="11.049" size="1.3716" layer="51" font="vector" ratio="18">8 7 6 5 4 3 2 1</text>
+<hole x="117.856" y="85.598" drill="6.858"/>
 <hole x="117.856" y="69.723" drill="6.858"/>
 <hole x="117.856" y="53.848" drill="6.858"/>
 <hole x="117.856" y="41.148" drill="6.858"/>
 <hole x="117.856" y="25.273" drill="6.858"/>
+<hole x="117.856" y="9.398" drill="6.858"/>
 </plain>
 <libraries>
 <library name="josh">
@@ -2309,7 +2313,7 @@ design rules under a new name.</description>
 <wire x1="24.892" y1="4.064" x2="24.892" y2="7.366" width="0.254" layer="1"/>
 </signal>
 <signal name="S$1">
-<via x="5.096" y="85.598" extent="1-16" drill="3"/>
+<via x="6.096" y="85.598" extent="1-16" drill="6.858"/>
 </signal>
 <signal name="S$2">
 <via x="6.096" y="69.723" extent="1-16" drill="6.858"/>
@@ -2324,10 +2328,10 @@ design rules under a new name.</description>
 <via x="6.096" y="25.273" extent="1-16" drill="6.858"/>
 </signal>
 <signal name="S$6">
-<via x="5.096" y="5.398" extent="1-16" drill="3"/>
+<via x="6.096" y="9.398" extent="1-16" drill="6.858"/>
 </signal>
 <signal name="S$13">
-<wire x1="5.969" y1="84.836" x2="5.969" y2="4.922" width="1.6764" layer="16"/>
+<wire x1="5.969" y1="84.836" x2="5.969" y2="10.922" width="1.6764" layer="16"/>
 </signal>
 <signal name="VCC">
 <contactref element="X1" pad="2"/>
@@ -2362,8 +2366,8 @@ design rules under a new name.</description>
 <signal name="DGND1">
 <wire x1="114.046" y1="46.609" x2="117.983" y2="46.609" width="1.6764" layer="16"/>
 </signal>
-<signal name="3">
-<via x="118.856" y="85.598" extent="1-16" drill="3"/>
+<signal name="S$7">
+<via x="117.856" y="85.598" extent="1-16" drill="6.858"/>
 </signal>
 <signal name="S$8">
 <via x="117.856" y="69.723" extent="1-16" drill="6.858"/>
@@ -2378,10 +2382,22 @@ design rules under a new name.</description>
 <via x="117.856" y="25.273" extent="1-16" drill="6.858"/>
 </signal>
 <signal name="S$12">
-<via x="118.856" y="6.144" extent="1-16" drill="3"/>
+<via x="117.856" y="9.398" extent="1-16" drill="6.858"/>
 </signal>
 <signal name="S$14">
-<wire x1="117.983" y1="85.09" x2="117.983" y2="6.89" width="1.6764" layer="16"/>
+<wire x1="117.983" y1="85.09" x2="117.983" y2="8.89" width="1.6764" layer="16"/>
+</signal>
+<signal name="N$1">
+<via x="5.08" y="77.47" extent="1-16" drill="3" shape="square"/>
+</signal>
+<signal name="N$6">
+<via x="5.08" y="16.51" extent="1-16" drill="3" shape="square"/>
+</signal>
+<signal name="N$9">
+<via x="119.38" y="17.78" extent="1-16" drill="3" shape="square"/>
+</signal>
+<signal name="N$10">
+<via x="119.38" y="77.47" extent="1-16" drill="3" shape="square"/>
 </signal>
 </signals>
 </board>
