@@ -5,8 +5,6 @@ Description
 -----------------
 Need to sync your neural data with external triggers? Use this board to connect up to 8 digital inputs to the acquisition board. Since its internal components are completely passive, the I/O board can be also be used to relay digital outputs and analog inputs.
 
-Cost of raw materials: $166.90
-
 Time to build: 1 hour
 
 View on [Open Ephys](http://open-ephys.com/io-board)
@@ -16,8 +14,7 @@ If you're interested in building your own I/O Board, we strongly recommend getti
 Specifications
 -------------------
 - 8 vertical BNC terminals
-- HDMI type D ("micro") connector
-- 8 red indicator LEDs (one for each channel)
+- HDMI type A connector
 
 File types:
 --------------
