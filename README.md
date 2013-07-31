@@ -16,6 +16,10 @@ Specifications
 - 8 vertical BNC terminals
 - HDMI type A connector
 
+Ordering info
+-------------------
+4.9" x 3.6"
+
 File types:
 --------------
 - .ai = Adobe Illustrator files; contain images of hardware

@@ -569,7 +569,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="CH2" library="josh" deviceset="BNC_VERTICAL" device=""/>
 <part name="CH3" library="josh" deviceset="BNC_VERTICAL" device=""/>
 <part name="CH4" library="josh" deviceset="BNC_VERTICAL" device=""/>
-<part name="U$3" library="open-ephys" deviceset="HDMI" device=""/>
+<part name="HDMI" library="open-ephys" deviceset="HDMI" device=""/>
 <part name="X1" library="con-molex" deviceset="22-23-2041" device=""/>
 <part name="X3" library="con-molex" deviceset="22-23-2101" device=""/>
 <part name="SUPPLY1" library="supply2" deviceset="DGND" device=""/>
@@ -597,7 +597,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="CH2" gate="G$1" x="7.62" y="45.72" rot="R180"/>
 <instance part="CH3" gate="G$1" x="7.62" y="68.58" rot="R180"/>
 <instance part="CH4" gate="G$1" x="7.62" y="91.44" rot="R180"/>
-<instance part="U$3" gate="G$1" x="60.96" y="-22.86" rot="R90"/>
+<instance part="HDMI" gate="G$1" x="60.96" y="-22.86" rot="R90"/>
 <instance part="X1" gate="-1" x="106.68" y="0"/>
 <instance part="X1" gate="-2" x="106.68" y="-2.54"/>
 <instance part="X1" gate="-3" x="106.68" y="-5.08"/>
@@ -625,7 +625,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="45.72" y1="38.1" x2="45.72" y2="-17.78" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="55.88" x2="17.78" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="CH3" gate="G$1" pin="SIGNAL"/>
-<pinref part="U$3" gate="G$1" pin="DATA1+"/>
+<pinref part="HDMI" gate="G$1" pin="DATA1+"/>
 <wire x1="45.72" y1="38.1" x2="45.72" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="X3" gate="-4" pin="S"/>
 <wire x1="45.72" y1="86.36" x2="48.26" y2="86.36" width="0.1524" layer="91"/>
@@ -639,7 +639,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="43.18" y1="22.86" x2="43.18" y2="-17.78" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="33.02" x2="17.78" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="CH2" gate="G$1" pin="SIGNAL"/>
-<pinref part="U$3" gate="G$1" pin="DATA2-"/>
+<pinref part="HDMI" gate="G$1" pin="DATA2-"/>
 <wire x1="43.18" y1="22.86" x2="43.18" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="X3" gate="-3" pin="S"/>
 <wire x1="43.18" y1="88.9" x2="45.72" y2="88.9" width="0.1524" layer="91"/>
@@ -652,7 +652,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="40.64" y1="10.16" x2="40.64" y2="-17.78" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="10.16" x2="17.78" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="CH1" gate="G$1" pin="SIGNAL"/>
-<pinref part="U$3" gate="G$1" pin="DATA2+"/>
+<pinref part="HDMI" gate="G$1" pin="DATA2+"/>
 <wire x1="40.64" y1="10.16" x2="40.64" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="X3" gate="-2" pin="S"/>
 <wire x1="40.64" y1="91.44" x2="43.18" y2="91.44" width="0.1524" layer="91"/>
@@ -665,7 +665,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="78.74" y1="93.98" x2="50.8" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="66.04" x2="50.8" y2="-17.78" width="0.1524" layer="91"/>
 <pinref part="CH5" gate="G$1" pin="SIGNAL"/>
-<pinref part="U$3" gate="G$1" pin="DATA0+"/>
+<pinref part="HDMI" gate="G$1" pin="DATA0+"/>
 <wire x1="50.8" y1="66.04" x2="50.8" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="X3" gate="-6" pin="S"/>
 <wire x1="50.8" y1="81.28" x2="53.34" y2="81.28" width="0.1524" layer="91"/>
@@ -678,7 +678,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="83.82" y1="71.12" x2="53.34" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="40.64" x2="53.34" y2="-17.78" width="0.1524" layer="91"/>
 <pinref part="CH6" gate="G$1" pin="SIGNAL"/>
-<pinref part="U$3" gate="G$1" pin="DATA0-"/>
+<pinref part="HDMI" gate="G$1" pin="DATA0-"/>
 <wire x1="53.34" y1="40.64" x2="53.34" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="X3" gate="-7" pin="S"/>
 <wire x1="53.34" y1="55.88" x2="55.88" y2="55.88" width="0.1524" layer="91"/>
@@ -691,7 +691,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="76.2" y1="48.26" x2="55.88" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="27.94" x2="55.88" y2="-17.78" width="0.1524" layer="91"/>
 <pinref part="CH7" gate="G$1" pin="SIGNAL"/>
-<pinref part="U$3" gate="G$1" pin="CLOCK+"/>
+<pinref part="HDMI" gate="G$1" pin="CLOCK+"/>
 <wire x1="55.88" y1="27.94" x2="55.88" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="X3" gate="-8" pin="S"/>
 <wire x1="55.88" y1="38.1" x2="58.42" y2="38.1" width="0.1524" layer="91"/>
@@ -704,7 +704,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="78.74" y1="25.4" x2="58.42" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="5.08" x2="58.42" y2="-17.78" width="0.1524" layer="91"/>
 <pinref part="CH8" gate="G$1" pin="SIGNAL"/>
-<pinref part="U$3" gate="G$1" pin="CLOCK-"/>
+<pinref part="HDMI" gate="G$1" pin="CLOCK-"/>
 <wire x1="58.42" y1="5.08" x2="58.42" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="X3" gate="-9" pin="S"/>
 <wire x1="58.42" y1="22.86" x2="60.96" y2="22.86" width="0.1524" layer="91"/>
@@ -739,25 +739,25 @@ In this library the device names are the same as the pin names of the symbols, t
 <segment>
 <wire x1="76.2" y1="-17.78" x2="76.2" y2="5.08" width="0.1524" layer="91"/>
 <pinref part="SUPPLY9" gate="G$1" pin="DGND"/>
-<pinref part="U$3" gate="G$1" pin="CECGND"/>
+<pinref part="HDMI" gate="G$1" pin="CECGND"/>
 <wire x1="76.2" y1="5.08" x2="76.2" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="5.08" x2="78.74" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="5.08" x2="81.28" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="5.08" x2="83.82" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="5.08" x2="86.36" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="5.08" x2="86.36" y2="0" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="CLOCKSHIELD"/>
+<pinref part="HDMI" gate="G$1" pin="CLOCKSHIELD"/>
 <wire x1="86.36" y1="0" x2="86.36" y2="-17.78" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="5.08" x2="83.82" y2="-17.78" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="DATA0SHIELD"/>
+<pinref part="HDMI" gate="G$1" pin="DATA0SHIELD"/>
 <wire x1="81.28" y1="-17.78" x2="81.28" y2="5.08" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="DATA1SHIELD"/>
+<pinref part="HDMI" gate="G$1" pin="DATA1SHIELD"/>
 <wire x1="78.74" y1="-17.78" x2="78.74" y2="5.08" width="0.1524" layer="91"/>
 <junction x="78.74" y="5.08"/>
 <junction x="76.2" y="5.08"/>
 <junction x="81.28" y="5.08"/>
 <junction x="83.82" y="5.08"/>
-<pinref part="U$3" gate="G$1" pin="DATA2SHIELD"/>
+<pinref part="HDMI" gate="G$1" pin="DATA2SHIELD"/>
 <pinref part="X1" gate="-1" pin="S"/>
 <wire x1="104.14" y1="0" x2="86.36" y2="0" width="0.1524" layer="91"/>
 <junction x="86.36" y="0"/>
@@ -804,7 +804,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="48.26" y1="71.12" x2="48.26" y2="-17.78" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="81.28" x2="17.78" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="CH4" gate="G$1" pin="SIGNAL"/>
-<pinref part="U$3" gate="G$1" pin="DATA1-"/>
+<pinref part="HDMI" gate="G$1" pin="DATA1-"/>
 <wire x1="48.26" y1="71.12" x2="48.26" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="X3" gate="-5" pin="S"/>
 <wire x1="48.26" y1="83.82" x2="50.8" y2="83.82" width="0.1524" layer="91"/>
@@ -814,7 +814,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <net name="VCC" class="0">
 <segment>
 <pinref part="X1" gate="-2" pin="S"/>
-<pinref part="U$3" gate="G$1" pin="VCC"/>
+<pinref part="HDMI" gate="G$1" pin="VCC"/>
 <wire x1="104.14" y1="-2.54" x2="73.66" y2="-2.54" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="-2.54" x2="73.66" y2="-17.78" width="0.1524" layer="91"/>
 </segment>
@@ -822,7 +822,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <net name="I2C_CLK" class="0">
 <segment>
 <pinref part="X1" gate="-3" pin="S"/>
-<pinref part="U$3" gate="G$1" pin="SCL"/>
+<pinref part="HDMI" gate="G$1" pin="SCL"/>
 <wire x1="104.14" y1="-5.08" x2="68.58" y2="-5.08" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="-5.08" x2="68.58" y2="-17.78" width="0.1524" layer="91"/>
 </segment>
@@ -830,7 +830,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <net name="I2C_DAT" class="0">
 <segment>
 <pinref part="X1" gate="-4" pin="S"/>
-<pinref part="U$3" gate="G$1" pin="SDA"/>
+<pinref part="HDMI" gate="G$1" pin="SDA"/>
 <wire x1="104.14" y1="-7.62" x2="66.04" y2="-7.62" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="-7.62" x2="66.04" y2="-17.78" width="0.1524" layer="91"/>
 </segment>
