@@ -1,4 +1,4 @@
-io-board
+I/O Board
 ========
 
 Description
@@ -7,7 +7,7 @@ Need to sync your neural data with external triggers? Use this board to connect 
 
 Time to build: 1 hour
 
-View on [Open Ephys](http://open-ephys.com/io-board)
+View on [Open Ephys](https://open-ephys.org/acquisition-system/io-board-pcb)
 
 If you're interested in building your own I/O Board, we strongly recommend getting in touch with us via the Open Ephys [contact](http://open-ephys.com/contact) page.
 
